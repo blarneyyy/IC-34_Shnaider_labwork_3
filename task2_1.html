@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed table</title>
+    <style>
+        main {
+          justify-content: center;
+          align-items: center;
+          min-height: 700px;
+          font-size: 18px;
+          font-weight: bold;
+          font-family: sans-serif;
+        }
+
+        table {
+          width: 1000px;
+          height: 700px;
+          border-collapse: collapse;
+          margin: 20px auto;
+        }
+
+        td {
+          border: 2px solid black;
+          text-align: center;
+        }
+
+        .blue {
+          height: 50px;
+          width: 100px;
+          background-color: rgb(134, 134, 237);
+        }
+
+        .second {
+          background-color: rgb(249, 226, 114);
+          width: 150px;
+          height: 100px;
+        }
+
+        .fourth {
+          height: 100px;
+        }
+
+        .fifth {
+          background-color: rgb(249, 226, 114);
+          height: 50px;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <main>
+      <table>
+        <tr>
+          <td class="blue" colspan="2">1</td>
+        </tr>
+        <tr>
+          <td class="second" rowspan="2">2</td>
+          <td class="fifth">5</td>
+        </tr>
+        <tr>
+          <td class="fourth">4</td>
+        </tr>
+        <tr>
+          <td class="blue" colspan="2">3</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
